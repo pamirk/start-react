@@ -38,7 +38,7 @@ export default () => {
                   <ReactLogo />
                 </Box>
                 <Typography variant="h6" color="primary">
-                  Start React Native
+                  business-news.live
                 </Typography>
               </Box>
             </Link>
