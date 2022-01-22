@@ -29,8 +29,9 @@ export default () => {
         <Container>
           <Box
             display="flex"
+            flexWrap="wrap"
             justifyContent="space-between"
-            alignItems="center"
+            alignItems="start"
           >
             <Link to={Routes.HOME}>
               <Box display="flex" alignItems="center">
@@ -42,7 +43,53 @@ export default () => {
                 </Typography>
               </Box>
             </Link>
-            <Box minWidth={90}>
+            <Box style={{marginLeft: 'auto', marginRight: 5}} minWidth={90}>
+              <Button to={'/contact'} fullWidth>
+                Contact us
+              </Button>
+            </Box>
+
+            <Box style={{ marginRight: 5}} minWidth={90}>
+              <Button to={'/about'} fullWidth>
+                About us
+              </Button>
+            </Box>
+            <Box style={{ marginRight: 5}} minWidth={90}>
+              <Button to={'/progress'} fullWidth>
+                Progress
+              </Button>
+            </Box>
+            <Box style={{ marginRight: 5}} minWidth={90}>
+              <Button to={'/faq'} fullWidth>
+                FAQs
+              </Button>
+            </Box>
+            <Box style={{ marginRight: 5}} minWidth={90}>
+              <Button to={'/learning'} fullWidth>
+                Learning
+              </Button>
+            </Box>
+            <Box style={{ marginRight: 5}} minWidth={90}>
+              <Button to={'/terms'} fullWidth>
+                Terms
+              </Button>
+            </Box>
+            <Box style={{ marginRight: 5}} minWidth={90}>
+              <Button to={'/terms-intro'} fullWidth>
+                Intro
+              </Button>
+            </Box>
+            <Box style={{ marginRight: 5}} minWidth={90}>
+              <Button to={'/terms-use'} fullWidth>
+                Use
+              </Button>
+            </Box>
+            <Box style={{ marginRight: 5}} minWidth={90}>
+              <Button to={'/terms-registration'} fullWidth>
+                Registration
+              </Button>
+            </Box>
+           {/* <Box minWidth={90}>
               {user === UNDETERMINED && <Skeleton width={12} fullWidth />}
               {user === UNAUTHENTICATED && (
                 <Button to={Routes.SIGN_IN} fullWidth>
@@ -54,7 +101,7 @@ export default () => {
                   Account
                 </Button>
               )}
-            </Box>
+            </Box>*/}
           </Box>
         </Container>
       </Toolbar>

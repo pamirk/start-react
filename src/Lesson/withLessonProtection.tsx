@@ -27,15 +27,15 @@ export default (Comp: (props: LessonProps) => JSX.Element) => ({
   if (!lesson) {
     return <PageNotFound />;
   }
-  if (lesson.free) {
+ /* if (lesson.free) {
     return <Comp {...{ lesson }} />;
-  }
+  }*/
   if (user === UNDETERMINED) {
     return <Loading />;
   }
-  if (user === UNAUTHENTICATED) {
+ /* if (user === UNAUTHENTICATED) {
     return <Redirect to={Routes.SIGN_IN} />;
-  }
+  }*/
   /*if (user && !user.access) {
     return <Redirect to={Routes.ACCOUNT} />;
   }*/

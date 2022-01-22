@@ -15,6 +15,15 @@ import PageNotFound from "./PageNotFound";
 import Support from "./Support/Support";
 import Reanimated2 from "./Reanimated2/Reanimated2";
 import {AppBar, AuthProvider, Footer, GithubProvider, Routes, ScrollToTop} from "./components";
+import About from "./About/About";
+import Contact from "./About/Contact";
+import Progress from "./About/Progress";
+import FAQ from "./About/FAQ";
+import Learning from "./About/Learning";
+import Terms from "./About/Terms";
+import TermsIntro from "./About/TermsIntro";
+import TermsUse from "./About/TermsUse";
+import TermsRegistration from "./About/TermsRegistration";
 
 const config = {
     apiKey: "AIzaSyCOjo2zvkh-FzNo-WpFPiafpbIlSkYjuHM",
@@ -116,6 +125,15 @@ export default () => {
                                 <Route path={Routes.ACCOUNT} component={Account}/>
                                 <Route path={Routes.LESSON} exact component={Lesson}/>
                                 <Route path={Routes.SUPPORT} exact component={Support}/>
+                                <Route path={'/about'} exact component={About}/>
+                                <Route path={'/contact'} exact component={Contact}/>
+                                <Route path={'/progress'} exact component={Progress}/>
+                                <Route path={'/faq'} exact component={FAQ}/>
+                                <Route path={'/learning'} exact component={Learning}/>
+                                <Route path={'/terms'} exact component={Terms}/>
+                                <Route path={'/terms-intro'} exact component={TermsIntro}/>
+                                <Route path={'/terms-use'} exact component={TermsUse}/>
+                                <Route path={'/terms-registration'} exact component={TermsRegistration}/>
                                 <Route component={PageNotFound}/>
                             </Switch>
                             <Footer/>

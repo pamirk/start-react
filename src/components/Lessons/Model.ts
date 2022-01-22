@@ -53,7 +53,7 @@ const v2: Record<Exclude<V2Lessons, keyof typeof v1>, string> = {
      circularslider: "tan1n7f195",
      graph: "97bu07vo0e",*/
     "dev-setup": "lf4dnbqfzi",
-    "heart-of-the-matter": "ciexjkx2e6",
+    "heart-of-the-matter": "w",
     intro: "0kx9speuhw",
     transitions2: "ea0kxwmxq6",
     pangesture2: "7nw9hbf5em",
